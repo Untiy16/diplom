@@ -1,5 +1,5 @@
 html, body {
-    min-width: 100%;
+    min-width: 95%;
     min-height: 100%;
     //background-color: red;
     text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
@@ -41,6 +41,7 @@ html, body {
     min-height: 100%;
     border: solid green;
    // position: relative;
+   overflow: auto;
 }
 
 #alarmdiv {
@@ -159,13 +160,17 @@ td, tr {
     width: 80px;
 }
 
-.todotask{
-    width: 100px;
+.todotaskcl{
+    width: 100%;
     height: 100px;
-    border: solid #f5b700;
-    margin: 8px;
-    padding: 5px;
+    border: solid #f5b700;    
     float: left;
+    overflow: auto;
+
+    background: rgb(54, 54, 219) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+    //box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+    //color: rgb(0,79,86);
+    user-select: none;
 }
 
 .knopka01 {
@@ -199,7 +204,7 @@ td, tr {
     color: rgb(128,207,214);
 }
 
-#knopka01add{
+.knopka01add{
     position: absolute;
     left:70%;
     bottom: 2%;
@@ -223,6 +228,7 @@ p{
 #www{
     font-size: 60px;
     font-weight:bold;
+   // contenteditable:true;
 
 
 }
@@ -235,4 +241,75 @@ p{
 #ccc{
     font-family: Arial;
     font-size: 20px;
+}
+
+#tododivbody, #alarmdivbody{
+    border: solid black;    
+    width: 100%;
+    min-height: 100%; 
+   overflow: auto;
+}
+
+#todoaddtaskdiv{
+     width: 50%;
+      border: solid yellow;   
+      float: left; 
+}
+
+
+.knopka02 {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+    outline: none;
+    border: none;
+    //border-radius: 100px;
+    background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+    box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+    color: rgb(0,79,86);
+    user-select: none;
+}
+.knopka02:hover {
+    color: rgb(0,59,66);
+    cursor: pointer;
+}
+.knopka02:active {
+    padding-bottom: 1px;
+    box-shadow:
+            inset rgba(0,0,0,1) 0 1px 3px,
+            inset rgba(0,0,0,.6) 0 -2px 5px,
+            inset rgba(252,255,255,.7) 0 2px 5px,
+            0 1px rgba(255,255,255,.08);
+    color: rgb(128,207,214);
+}
+
+
+#todosavetaskdiv{
+     width: 50%;
+      border: solid yellow;   
+      float: left; 
+      background: rgb(43, 114, 28) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+}
+
+#alarmadddiv{
+     width: 50%;
+      border: solid yellow;   
+      float: left; 
+}
+
+#alarmsavediv{
+    width: 50%;
+      border: solid yellow;   
+      float: left; 
+      background: rgb(43, 114, 28) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+}
+
+.timetext{
+    text-align: center;
+    font-size: 50px;
 }

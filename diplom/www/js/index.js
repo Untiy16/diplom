@@ -1,9 +1,14 @@
 $(document).ready(function() {
     var contentHeight = $("html").height() -  $("#mainmenu").height();
-
+    console.log("stage1");
     $(".testt").css({
         height: contentHeight + 'px'
     });
+    console.log("stage2");
+
+    
+
+
 });
     var sheldule = [];
      sheldule[0]={
@@ -52,8 +57,50 @@ $(document).ready(function() {
     };
 
      //console.log()
+var shelduletime = [];
+    console.log("stage3");
 
+    if(JSON.parse(localStorage.getItem("shelduletimestored"))==null){
+        
+        shelduletime[0]={
+            "start": "",
+            "finish": ""
+        } 
+        shelduletime[1]={
+            "start": "",
+            "finish": ""
+        } 
+        shelduletime[2]={
+            "start": "",
+            "finish": ""
+        } 
+        shelduletime[3]={
+            "start": "",
+            "finish": ""
+        } 
+        shelduletime[4]={
+            "start": "",
+            "finish": ""
+        }
+        console.log("stage4.1");
+    }
+    else{
+        shelduletime = JSON.parse(localStorage.getItem("shelduletimestored"));
+            $('#startless1').text(shelduletime[0].start);
+            $('#finless1').text(shelduletime[0].finish);
 
+            $('#startless2').text( shelduletime[1].start);
+            $('#finless2').text(shelduletime[1].finish);
 
+            $('#startless3').text(shelduletime[2].start);
+            $('#finless3').text(shelduletime[2].finish);
+
+            $('#startless4').text(shelduletime[3].start);
+            $('#finless4').text(shelduletime[3].finish);
+
+            $('#startless5').text(shelduletime[4].start);
+            $('#finless5').text(shelduletime[4].finish);
+            console.log("stage4.2");
+    }
 
 

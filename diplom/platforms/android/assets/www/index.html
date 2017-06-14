@@ -11,7 +11,7 @@
 
         <script src="./js/jquery.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+       <!-- <script type="text/javascript" src="js/index.js"></script> -->
         <title>Hello World</title>
 
     </head>
@@ -19,12 +19,12 @@
        <div id="mainmenu">
            <ul>
                <li><a id="rozklad"> Розклад </a></li>
-               <li><a id="chas"> Час </a></li>
+               <li><a id="chas"> Заняття </a></li>
                <li><a id="todo"> ToDo </a></li>
                <li><a id="alarm"> Будильник </a></li>
            </ul>
        </div>
-       <div class="testt" id="welcomediv"><br><br><br><br><br><br><br><br><br><br><br><br><p id="www">Welcome</p><p id="ccc">Цей додаток написаний за допомогою фреймворку для кросплатформної розробки Cordova</p></div>
+       <div class="testt" id="welcomediv"><br><br><br><br><br><br><br><br><br><br><br><br><p  id="www">Welcome</p><p id="ccc">Цей додаток написаний за допомогою фреймворку для кросплатформної розробки Cordova</p></div>
        <div class="testt" id="rozkladdiv">
            <div class="rozkswitch arrow up" id="rozkleft"></div>
                 <div id="day1"></div>
@@ -43,32 +43,35 @@
            </tr>
            <tr>
                <td>1</td>
-               <td>8:00</td>
-               <td>9:20</td>
+               <td id="startless1" contenteditable="true"></td>
+               <td id="finless1" contenteditable="true"></td>
            </tr>
            <tr>
                <td>2</td>
-               <td>9:40</td>
-               <td>11:00</td>
+               <td id="startless2" contenteditable="true"></td>
+               <td id="finless2" contenteditable="true"></td>
            </tr>
            <tr>
                <td>3</td>
-               <td>11:10</td>
-               <td>12:30</td>
+               <td id="startless3" contenteditable="true"></td>
+               <td id="finless3" contenteditable="true"></td>
            </tr>
            <tr>
                <td>4</td>
-               <td>12:40</td>
-               <td>14:00</td>
+               <td id="startless4" contenteditable="true"></td>
+               <td id="finless4" contenteditable="true"></td>
            </tr>
            <tr>
                <td>5</td>
-               <td>14:20</td>
-               <td>15:40</td>
+               <td id="startless5" contenteditable="true"></td>
+               <td id="finless5" contenteditable="true"></td>
            </tr>
-       </table></div>
-       <div class="testt" id="tododiv"><div type="button" id="knopka01add" class="knopka01" value="+">+</div></div>
-       <div class="testt" id="alarmdiv">alarm</div>
-       <script type="text/javascript" src="js/script.js"></script>
+       </table>
+		<div type="button" id="sheltimesave" class="knopka01 knopka01add" value="✔">✔</div>
+       </div>
+       <div class="testt" id="tododiv"><div class="knopka02" id="todoaddtaskdiv">+</div><div class="knopka02" id="todosavetaskdiv">✔</div><div id="tododivbody"></div></div>
+       <div class="testt" id="alarmdiv"><div class="knopka02" id="alarmadddiv">+</div><div class="knopka02" id="alarmsavediv">✔</div><div id="alarmdivbody"></div></div>
+       <script type="text/javascript" src="js/index.js"></script>
+       <script type="text/javascript" src="js/script.js"></script>      
     </body>
 </html>

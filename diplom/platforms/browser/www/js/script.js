@@ -76,17 +76,44 @@ $('#rozkright').click(function(){
 });
 
 
-$('#tododiv').html($('#tododiv').html()+ "<div class='todotask'><strong>Дописати диплом</strong><br>Lorem ipsum dolor sit amet.</div>"+
-    "<div class='todotask'><strong>Лаб. роб. №4</strong><br>Lorem ipsum dolor sit amet.</div>"+
-    "<div class='todotask'><strong>Погодувати кота</strong><br>Lorem ipsum dolor sit amet.</div>"+
-    "<div class='todotask'><strong>Закінчити статтю</strong><br>Lorem ipsum dolor sit amet.</div>");
+//$('#tododiv').html($('#tododiv').html()+ );
 
- $('#tododiv').html( $('#tododiv').html()+"<div class='todotask'><strong>Завдання5</strong><br>Lorem ipsum dolor sit amet.</div>");
+ //$('#tododiv').html( $('#tododiv').html()+"<div class='todotask'><strong>Завдання5</strong><br>Lorem ipsum dolor sit amet.</div>");
 
- let zavd=5;
-$('#knopka01add').click(function(){
+ var zavd=0;
+$('#todoaddtaskdiv').click(function(){
     console.log("hjj")
     zavd++;
-    $('#tododiv').html( $('#tododiv').html()+"<div class='todotask'><strong>Завдання"+zavd+"</strong><br>Lorem ipsum dolor sit amet.</div>");
+    $('#tododivbody').html( $('#tododivbody').html()+"<div class='todotask'><strong>Завдання"+zavd+"</strong><br>Lorem ipsum dolor sit amet.</div>");
 });
 
+/*document.onmousewheel = function (e) {
+  e.preventDefault();
+}*/
+
+
+var storedNames = JSON.parse(localStorage.getItem("names"));
+
+$('#sheltimesave').click(function(){
+    console.log("saving shelduletime");
+    shelduletime[0].start=$('#startless1').text();
+    shelduletime[0].finish=$('#finless1').text();
+
+    shelduletime[1].start=$('#startless2').text();
+    shelduletime[1].finish=$('#finless2').text();
+
+    shelduletime[2].start=$('#startless3').text();
+    shelduletime[2].finish=$('#finless3').text();
+
+    shelduletime[3].start=$('#startless4').text();
+    shelduletime[3].finish=$('#finless4').text();
+
+    shelduletime[4].start=$('#startless5').text();
+    shelduletime[4].finish=$('#finless5').text();
+
+    console.log("shelduletime saved");
+    console.log("first  lesson time start");
+    console.log(shelduletime[0].start);
+    localStorage.setItem("shelduletimestored", JSON.stringify(shelduletime));
+
+});
