@@ -39,7 +39,7 @@ html, body {
     display: none;
     width: 100%;
     min-height: 100%;
-    border: solid green;
+  //  border: solid green;
    // position: relative;
    overflow: auto;
 }
@@ -70,7 +70,7 @@ td, tr {
     float: left;
 // margin: 50% 13%;
     position: absolute;
-    top: 35%;
+    top: 39%;
     left: 18%;
 
 }
@@ -85,7 +85,7 @@ td, tr {
 
 #rozkleft {
     left: 38%;
-    top: 8%;
+    top: 15%;
 }
 
 #rozkright {
@@ -163,7 +163,7 @@ td, tr {
 .todotaskcl{
     width: 100%;
     height: 100px;
-    border: solid #f5b700;    
+    //border: solid #f5b700;    
     float: left;
     overflow: auto;
 
@@ -171,6 +171,7 @@ td, tr {
     //box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
     //color: rgb(0,79,86);
     user-select: none;
+   // margin: 5px 0;
 }
 
 .knopka01 {
@@ -244,15 +245,15 @@ p{
 }
 
 #tododivbody, #alarmdivbody{
-    border: solid black;    
+    //border: solid black;    
     width: 100%;
-    min-height: 100%; 
+    min-height: 91%; 
    overflow: auto;
 }
 
 #todoaddtaskdiv{
      width: 50%;
-      border: solid yellow;   
+     // border: solid yellow;   
       float: left; 
 }
 
@@ -291,20 +292,27 @@ p{
 
 #todosavetaskdiv{
      width: 50%;
-      border: solid yellow;   
+    //  border: solid yellow;   
+      float: left; 
+      background: rgb(43, 114, 28) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+}
+
+#shelsave{
+width: 100%;
+     // border: solid yellow;   
       float: left; 
       background: rgb(43, 114, 28) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
 }
 
 #alarmadddiv{
      width: 50%;
-      border: solid yellow;   
+      //border: solid yellow;   
       float: left; 
 }
 
 #alarmsavediv{
     width: 50%;
-      border: solid yellow;   
+     // border: solid yellow;   
       float: left; 
       background: rgb(43, 114, 28) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
 }
