@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/mainmenu.css">
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap-theme.min.css">
+
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/swipe.js"></script>
+        <script src="./css/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+       <!-- <script type="text/javascript" src="js/index.js"></script> -->
+        <title>Hello World</title>
+
+    </head>
+    <body>
+       <div id="mainmenu">
+           <ul>
+               <li><a id="rozklad"> Розклад </a></li>
+               <li><a id="chas"> Заняття </a></li>
+               <li><a id="todo"> ToDo </a></li>
+               <li><a id="alarm"> Будильник </a></li>
+           </ul>
+       </div>
+       <div class="testt" id="welcomediv"><br><br><br><br><br><br><br><br><br><br><br><br><p  id="www">Welcome</p><p id="ccc">Цей додаток написаний за допомогою фреймворку для кросплатформної розробки Ionic</p></div>
+       <div class="testt" id="rozkladdiv">
+       <div class="btn btn-success" id="shelsave"><p id="shelsavep">Зберегти</p></div>
+           <div class="rozkswitch arrow up" id="rozkleft"><img width="100" height="100" src="./img/arup.png"></div>
+                <div id="day1">
+                <table class='sheltable'>
+    			<tr>
+     				<td class="day" colspan="2">Понеділок</td>
+     			</tr>
+     			<tr>
+				     <td width="70px" >Пара 1:</td>
+				     <td width="180px" id="day1less1" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 2:</td>
+				     <td width="180px" id="day1less2" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 3:</td>
+				     <td width="180px" id="day1less3" contenteditable="true"></td>
+     			</tr>
+    			<tr>
+				     <td>Пара 4:</td>
+				     <td width="180px" id="day1less4" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 5:</td>
+				     <td width="180px" id="day1less5" contenteditable="true"></td>
+     			</tr>
+     			</table>
+     			</div>
+                <div id="day2">
+                <table id='sheltable'>
+    			<tr>
+     				<td class="day" colspan="2">Вівторок</td>
+     			</tr>
+     			<tr>
+				     <td width="70px">Пара 1:</td>
+				     <td width="180px" id="day2less1" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 2:</td>
+				     <td width="180px" id="day2less2" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 3:</td>
+				     <td width="180px" id="day2less3" contenteditable="true"></td>
+     			</tr>
+    			<tr>
+				     <td>Пара 4:</td>
+				     <td width="180px" id="day2less4" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 5:</td>
+				     <td width="180px" id="day2less5" contenteditable="true"></td>
+     			</tr>
+     			</table>
+     			</div>
+                <div id="day3">
+                <table id='sheltable'>
+    			<tr>
+     				<td class="day" colspan="2">Середа</td>
+     			</tr>
+     			<tr>
+				     <td width="70px"> Пара 1:</td>
+				     <td width="180px" id="day3less1" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 2:</td>
+				     <td width="180px" id="day3less2" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 3:</td>
+				     <td width="180px" id="day3less3" contenteditable="true"></td>
+     			</tr>
+    			<tr>
+				     <td>Пара 4:</td>
+				     <td width="180px" id="day3less4" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 5:</td>
+				     <td width="180px" id="day3less5" contenteditable="true"></td>
+     			</tr>
+     			</table>
+     			</div>
+                <div id="day4">
+                <table id='sheltable'>
+    			<tr>
+     				<td class="day" colspan="2">Четвер</td>
+     			</tr>
+     			<tr>
+				     <td width="70px">Пара 1:</td>
+				     <td width="180px" id="day4less1" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 2:</td>
+				     <td width="180px" id="day4less2" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 3:</td>
+				     <td width="180px" id="day4less3" contenteditable="true"></td>
+     			</tr>
+    			<tr>
+				     <td>Пара 4:</td>
+				     <td width="180px" id="day4less4" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 5:</td>
+				     <td width="180px" id="day4less5" contenteditable="true"></td>
+     			</tr>
+     			</table>
+     			</div>
+                <div id="day5">
+                <table id='sheltable'>
+    			<tr>
+     				<td class="day" colspan="2">П'ятниця</td>
+     			</tr>
+     			<tr>
+				     <td width="70px">Пара 1:</td>
+				     <td width="180px" id="day5less1" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 2:</td>
+				     <td width="180px" id="day5less2" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 3:</td>
+				     <td width="180px" id="day5less3" contenteditable="true"></td>
+     			</tr>
+    			<tr>
+				     <td>Пара 4:</td>
+				     <td width="180px" id="day5less4" contenteditable="true"></td>
+     			</tr>
+     			<tr>
+				     <td>Пара 5:</td>
+				     <td width="180px" id="day5less5" contenteditable="true"></td>
+     			</tr>
+     			</table>
+     			</div>
+           <div class="rozkswitch arrow down" id="rozkright"><img width="100" height="100" src="./img/ardo.png"></div>
+       </div>
+       <div class="testt" id="chasdiv">
+           <table id="chastable">
+           <tr>
+               <td>Пара</td>
+               <td>Початок</td>
+               <td>Кінець</td>
+           </tr>
+           <tr>
+               <td>1</td>
+               <td id="startless1" contenteditable="true"></td>
+               <td id="finless1" contenteditable="true"></td>
+           </tr>
+           <tr>
+               <td>2</td>
+               <td id="startless2" contenteditable="true"></td>
+               <td id="finless2" contenteditable="true"></td>
+           </tr>
+           <tr>
+               <td>3</td>
+               <td id="startless3" contenteditable="true"></td>
+               <td id="finless3" contenteditable="true"></td>
+           </tr>
+           <tr>
+               <td>4</td>
+               <td id="startless4" contenteditable="true"></td>
+               <td id="finless4" contenteditable="true"></td>
+           </tr>
+           <tr>
+               <td>5</td>
+               <td id="startless5" contenteditable="true"></td>
+               <td id="finless5" contenteditable="true"></td>
+           </tr>
+       </table>
+
+		<div type="button" id="sheltimesave"  class="btn btn-success"  value="Зберегти"><p id="sheltimesavep">Зберегти</p></div>
+       </div>
+       <div class="testt" id="tododiv"><div class="btn btn-primary " id="todoaddtaskdiv" ><p class="taskdivbtn">Додати</p></div><div class="btn btn-success" id="todosavetaskdiv"><p class="taskdivbtn">Зберегти</p></div><div id="tododivbody"></div></div>
+       <div class="testt" id="alarmoffdiv"><div class="btn btn-danger" id="alarmoffdivbut">Вимкнути</div></div>
+       <div class="testt" id="alarmdiv"><div class="btn btn-primary " id="alarmadddiv"><p class="taskdivbtn">Додати</p></div><div class="btn btn-success" id="alarmsavediv"><p class="taskdivbtn">Зберегти</p></div><div id="alarmdivbody"></div></div>
+       <script type="text/javascript" src="js/index.js"></script>
+       <script type="text/javascript" src="js/script.js"></script>   
+
+    </body>
+</html>

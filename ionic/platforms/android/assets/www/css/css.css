@@ -1,0 +1,413 @@
+html, body {
+    min-width: 95%;
+    min-height: 100%;
+    //background-color: red;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    color: #387ef5; //ionic blue;
+    font-family: "Arial";
+    overflow-x:  hidden;
+}
+
+.testt {
+   // border: solid;
+}
+
+#welcomediv {
+    //display: none;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    //border: solid fuchsia;
+}
+
+#rozkladdiv {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+   // border: solid #8515ff;
+
+}
+
+#chasdiv {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+  //  border: solid yellow;
+}
+
+#tododiv {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+  //  border: solid green;
+   // position: relative;
+   overflow: auto;
+}
+
+#alarmdiv {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+   // border: solid aqua;
+   overflow: auto;
+}
+
+#alarmoffdiv{
+    display: none;
+    width: 100%;
+    min-height: 100%;
+   // border: solid aqua;
+   overflow: auto;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+td, tr {
+    border: solid #387ef5;
+    padding: 3px;
+}
+
+.day {
+    text-align: center;
+
+}
+
+#day2, #day3, #day4, #day5 {
+    display: none;
+    text-align: center;
+    float: left;
+// margin: 50% 13%;
+    position: absolute;
+    top: 39%;
+    left: 18%;
+
+}
+
+.rozkswitch {
+    /*height: 50px;
+    width: 50px;*/
+    /*border: solid black;*/
+    position: absolute;
+
+}
+
+#rozkleft {
+    left: 38%;
+    top: 15%;
+    background-image: url("../img/arup.png");
+}
+
+#rozkright {
+    left: 38%;
+    bottom: 8%;
+}
+
+#day1 {
+
+    text-align: center;
+    float: left;
+   // margin: 50% 13%;
+    position: absolute;
+    top: 39%;
+    left: 18%;
+}
+
+/*.arrow{
+    width: 0px;
+    height: 0px;
+    border: 50px solid transparent;
+    border-top-color: #6dff00;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.arrow:before{
+    content:'';
+    width: 0px;
+    height: 0px;
+    border: 30px solid transparent;
+    border-top-color: #ffffff;
+    display: inline-block;
+    -webkit-transform: translate(-30px, -50px);
+}
+
+
+.arrow.down {
+    transform: rotate(0deg) translate(0px, 25px);
+    -webkit-transform: rotate(0deg) translate(0px, 25px);
+    -moz-transform: rotate(0deg) translate(0px, 25px);
+    -o-transform: rotate(0deg) translate(0px, 25px);
+    -ms-transform: rotate(0deg) translate(0px, 25px);
+}
+
+.arrow.up{
+    transform: rotate(180deg) translate(0px, 25px);
+    -webkit-transform: rotate(180deg) translate(0px, 25px);
+    -moz-transform: rotate(180deg) translate(0px, 25px);
+    -o-transform: rotate(180deg) translate(0px, 25px);
+    -ms-transform: rotate(180deg) translate(0px, 25px) translate(0px, 25px);
+}*/
+
+
+
+.sheltable {
+    
+    
+}
+
+#chasdiv{
+    position: relative;
+}
+
+#chastable {
+    text-align: center;
+    float: left;
+// margin: 50% 13%;
+    position: absolute;
+    top: 35%;
+    left: 18%;
+
+     
+}
+
+#chastable td{
+    width: 80px;
+}
+
+.todotaskcl{
+    /*width: 100%;
+    height: 100px;     
+    float: left;
+    overflow: auto;
+
+    background: rgb(54, 54, 219) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));   
+    user-select: none;
+    margin: 2px 0;*/
+    //border: 2px solid #004C3B;
+    border-radius: 7px;
+    box-shadow: inset 0 0 0px 10px rgba(92,165,167,.6),inset 5px -10px 10px 0 rgba(92,165,149,.7);
+    box-sizing: border-box;
+    min-height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.todotaskhead {
+    background: linear-gradient(#FFD828 40%, #FFBA00);
+    border-radius: 7px 7px 0 0;
+    font-weight: normal;
+    padding: 6px 10px;
+    position: relative;
+    margin: 0;
+}
+
+.todotaskhead::before {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #FFBA00;
+    content: '';
+    display: block;
+    left: 7px;
+    position: absolute;
+    top: 33px;
+
+}
+
+.todotaskbody{
+
+    background: #EDECDE;
+    border-radius: 0 0 7px 7px;
+    font-size: 14px;
+    padding: 12px 0 40px 10px;
+    margin: 0;
+    color:black;
+
+}
+
+
+.knopka01 {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+    box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+    color: rgb(0,79,86);
+    user-select: none;
+}
+.knopka01:hover {
+    color: rgb(0,59,66);
+    cursor: pointer;
+}
+.knopka01:active {
+    padding-bottom: 1px;
+    box-shadow:
+            inset rgba(0,0,0,1) 0 1px 3px,
+            inset rgba(0,0,0,.6) 0 -2px 5px,
+            inset rgba(252,255,255,.7) 0 2px 5px,
+            0 1px rgba(255,255,255,.08);
+    color: rgb(128,207,214);
+}
+
+.knopka01add{
+    position: absolute;
+    left:70%;
+    bottom: 2%;
+}
+
+ #alarmdiv, #rozkladdiv, #tododiv, #chasdiv, #alarmoffdiv, #welcomediv{
+   //background-image: url("../img/bak.png");
+     background-color: white;//rgb(155,47,37);
+}
+
+p{
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    color: #387ef5; //ionic blue;
+    font-family: "Arial Black";
+
+
+
+
+}
+
+#www{
+    font-size: 60px;
+    font-weight:bold;
+   // contenteditable:true;
+
+
+}
+
+#welcomediv{
+   //color:blue;
+   text-align: center;
+}
+
+#ccc{
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#tododivbody, #alarmdivbody{
+    //border: solid black;    
+    width: 100%;
+    min-height: 91%; 
+   overflow: auto;
+}
+
+#todoaddtaskdiv{
+     width: 44%;
+     // border: solid yellow;   
+      float: left; 
+      height: 50px;
+      margin: 10px;
+}
+
+
+.knopka02 {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+    outline: none;
+    border: none;
+    //border-radius: 100px;
+    background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+    box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+    color: rgb(0,79,86);
+    user-select: none;
+}
+.knopka02:hover {
+    color: rgb(0,59,66);
+    cursor: pointer;
+}
+.knopka02:active {
+    padding-bottom: 1px;
+    box-shadow:
+            inset rgba(0,0,0,1) 0 1px 3px,
+            inset rgba(0,0,0,.6) 0 -2px 5px,
+            inset rgba(252,255,255,.7) 0 2px 5px,
+            0 1px rgba(255,255,255,.08);
+    color: rgb(128,207,214);
+}
+
+
+#todosavetaskdiv{
+     width: 44%;
+    //  border: solid yellow;   
+      float: left; 
+      height: 50px;
+      margin: 10px;
+}
+
+#shelsave{
+width: 100%;
+     // border: solid yellow;   
+      float: left; 
+     margin: 5px 0;
+}
+
+#alarmadddiv{
+      width: 44%;
+     // border: solid yellow;   
+      float: left; 
+      height: 50px;
+      margin: 10px; 
+}
+
+#alarmsavediv{
+     width: 44%;
+    //  border: solid yellow;   
+      float: left; 
+      height: 50px;
+      margin: 10px;
+}
+
+.timetext{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#alarmoffdivbut{
+    margin: 230px 140px;
+}
+
+#sheltimesave{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left:65%;
+    bottom: 5%;
+
+}
+
+#sheltimesavep{
+    color:white;
+    margin: 9px 0;
+}
+
+#shelsavep{
+    color:white;
+    margin: 9px 0;
+}
+
+.taskdivbtn{
+    color:white;
+    margin: 9px 0;
+}
