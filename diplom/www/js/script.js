@@ -118,6 +118,13 @@ $('#todosavetaskdiv').click(function(){
 
 });
 
+function timeq(){
+    var d = new Date();
+    d.setMinutes(d.getMinutes() - 1);
+    var k=d.toString();
+    k=k.substr(16,5);
+    return k;
+}
 
 function rmdiv(id){
     console.log(id);   
@@ -195,7 +202,7 @@ $('#shelsave').click(function(){
 $('#alarmadddiv').click(function(){
     console.log("hjj")
     alarmcount++;
-    $('#alarmdivbody').html( $('#alarmdivbody').html()+"<div ondblclick=\"rmdiv(id)\" contenteditable=\"true\" class='todotaskcl' id=\"todotask"+alarmcount+"\""+" ><strong>Будильник"+"</strong><br><p class=\"timetext\">"+Date().substr(16,3)+(Date().substr(19,2)-1)+"</p></div>");
+    $('#alarmdivbody').html( $('#alarmdivbody').html()+"<div ondblclick=\"rmdiv(id)\" contenteditable=\"true\" class='todotaskcl' id=\"todotask"+alarmcount+"\""+" ><strong>Будильник"+"</strong><br><p class=\"timetext\">"+timeq()+"</p></div>");
     
 });
 
@@ -221,7 +228,7 @@ function beep() {
     snd.play();
 }
 
-beep();
+//beep();
 
 
 
@@ -241,13 +248,38 @@ function alarmtimeparse() {
 
 //alarmtimeparse();
 function alarmcheck() {
-   
-     for (var i = 0; i < timearray.length -1; i++) {
+    
+    for (var i = 0; i < timearray.length -1; i++) {
         console.log(timearray[i])
-        //console.log(Date().substr(16,5));
-       if (Date().substr(16,5)==timearray[i]) {beep();}
+        console.log(Date().substr(16,5));
+        if (Date().substr(16,5)==timearray[i]) {
+            beep();
+            $('#' + blockId).fadeOut('fast');
+            $('#alarmoffdiv').fadeIn('fast');           
 
+        }
+        else{
+            $('#alarmoffdiv').fadeOut('fast');
+            $('#' + blockId).fadeIn('fast');            
+        }
    }
 }
 
-//setInterval("alarmcheck()", 5000);
+setInterval("alarmcheck()", 1000);
+
+function alarmoff() {
+   
+     timearray.length=0;
+     setTimeout('$(\'#alarmsavediv\').click()', 60000);
+}
+
+
+
+$('#alarmoffdivbut').click(function(){
+
+$('#alarmoffdiv').fadeOut('fast');
+$('#' + blockId).fadeIn('fast');
+alarmoff();
+
+});
+
