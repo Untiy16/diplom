@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Todo.TodoItemPage" x:Name="page" Title="Редагувати">
+	<StackLayout Margin="20" VerticalOptions="StartAndExpand">
+		<Label Text="Назва" />
+		<Entry Text="{Binding Source={x:Reference page}, Path=TodoItem.Name}" Placeholder="Введіть завдання" />
+		<ActivityIndicator HorizontalOptions="Center" IsRunning="{Binding Source={x:Reference page}, Path=IsProcessing}" />
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">			
+		</StackLayout>
+		<Label Text="Готово" />
+		<Switch IsToggled="{Binding Source={x:Reference page}, Path=TodoItem.Done}" />
+		<Button Text="Зберегти" Clicked="OnSaveClicked" />
+		<Button Text="Видалити" Clicked="OnDeleteClicked" />
+        <Button Text="Відміна" Clicked="OnCancelClicked" />
+	</StackLayout>
+</ContentPage>

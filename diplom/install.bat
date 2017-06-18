@@ -1,1 +1,0 @@
-adb install android-armv7-debug.apk
